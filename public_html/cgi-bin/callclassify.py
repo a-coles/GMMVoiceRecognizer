@@ -4,6 +4,7 @@
 #
 #This script is called from featurize2.py and is executed on the CGI server (cgi.cs.mcgill.ca) in order to pass the form data. However, the CGI server has a too-low version of Python so cannot be used to run the scripts of the rest of the project. Therefore this extra layer is necessary. It performs preliminary file-system functions and then calls classify.py to be executed on the Teaching server (mimi.cs.mcgill.ca), which has the correct version of Python, by ssh-ing into acoles' account automatically with a pre-established fingerprint between the two servers.
 #
+# For the sake of security, in this repository mirror, the web address will be replaced with the string "home page".
 #
 
 import cgi
@@ -41,11 +42,11 @@ try:
         print "<tr><td align=\"center\">GMM for <b>"+match+"</b> (training data)</td>"
         print "<td align=\"center\">GMM for <b>"+username+"</b> (test data)</td></tr></table>"
         print "<br><br>"
-        print "<a href=\"http://cgi.cs.mcgill.ca/~acoles/speechindex.php\">Back Home</a>"
+        print "<a href=\"home page">Back Home</a>"
 
         #Delete the file containing the username (it will be created again at the next call, etc.)
         os.system("ssh acoles@mimi.cs.mcgill.ca rm ~/public_html/550uploads/testgmms/match.txt")
 
 except IOError:
         print "<br><br>"
-        print "<a href=\"http://cgi.cs.mcgill.ca/~acoles/speechindex.php\">Back Home</a>"
+        print "<a href=\"home page">Back Home</a>"
