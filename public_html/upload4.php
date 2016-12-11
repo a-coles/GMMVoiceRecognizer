@@ -3,6 +3,7 @@
 //
 //
 // The upload script for the testing file. Uploads the testing file to the server and stores it in /550uploads.
+// For the sake of security, in this repository mirror, the web address will be replaced with the string "home page".
 //
 //
 
@@ -30,7 +31,7 @@ This tool will make a thumbprint of your voice and then use it to tell you if yo
 <i><b>Error.</b>
 
 Something went wrong. Make sure you're uploading a .wav file!</i>
-<a href="http://cgi.cs.mcgill.ca/~acoles/speechindex.php">Go Back</a>
+<a href="home page">Go Back</a>
 <?php
     exit();
     echo "Here is some more debugging info:";
@@ -77,7 +78,7 @@ This tool will make a thumbprint of your voice and then use it to tell you if yo
 <i><b>Error.</b>
 
 Something went wrong. Make sure you're uploading a .wav file!</i>
-<a href="http://cgi.cs.mcgill.ca/~acoles/speechindex.php">Go Back</a>
+<a href="home page">Go Back</a>
 <?php
     echo "Error\n";
     echo 'Here is some more debugging info:';
