@@ -1,10 +1,8 @@
 ## GMM Voice Recognizer
 
-This is a MFCC-GMM-based voice recognizer implemented in Python. This repository contains a mirror of the directory structure for the web-hosted version as well as a standalone application to be used for testing.
+This is a MFCC-GMM-based voice recognizer implemented in Python. This repository contains a standalone application to be used for testing.
 
 ## What is in here?
-
-* The mirror of the web-hosted version is contained in the public_html directory.
 * The standalone version is contained in voicerecognizer.py.
 * More information about the implementation can be found in the GMM Voice Recongnizer - Writeup.pdf file.
 
